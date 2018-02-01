@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Medicine</defName>
+    <label>medicine</label>
+    <description>Medical staff use these supplies to heal the wounded.</description>
+    <thingClass>Medicine</thingClass>
+	<graphicData>
+      <texPath>Things/Item/Resource/Medicine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>18</MarketValue>
+      <Mass>0.5</Mass>
+      <Flammability>1.0</Flammability>
+      <MedicalPotency>1.00</MedicalPotency>
+      <DeteriorationRate>2</DeteriorationRate>
+      <WorkToMake>700</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+	<stuffCategories>
+		<li>Fabric</li>
+	</stuffCategories>
+	<costStuffCount>3</costStuffCount>
+    <costList>
+      <HerbalMedicine>1</HerbalMedicine>
+      <Neutroamine>1</Neutroamine>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugProductionSpeed</workSpeedStat>
+      <workSkill>Medicine</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <researchPrerequisite>MedicineProduction</researchPrerequisite>
+      <skillRequirements>
+				<Medicine>6</Medicine>
+				<Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+</Defs>
