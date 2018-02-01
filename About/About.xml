@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>All Textile Medicine</name>
+	<author>Nina Felwitch</author>
+	<targetVersion>0.18.0</targetVersion>
+	<url></url>
+	<description>
+	While playing, it bothered me that medicine can only be crafted with vanilla coth and no other fabrics.
+	So I looked into making mods for RimWorld and this is the result.
+
+	This mod allows crafting medicine with all fabrics and I also added a recipe to craft 5 medicine at a time. 
+	And I changed the workSkill from Intellectual to Medicine.
+	</description>
+</ModMetaData>
