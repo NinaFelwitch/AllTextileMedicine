@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef>
+		<defName>BulkMakeMeds</defName>
+		<label>make 5 medicine</label>
+		<description>Make 5 Medicine.</description>
+		<jobString>Making 5 Medicine.</jobString>
+		
+		<workSkillLearnFactor>1.16</workSkillLearnFactor>
+		
+	<ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>HerbalMedicine</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+	  <li>
+        <filter>
+			<categories>
+			<li>Textiles</li>
+			</categories>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+	
+	<fixedIngredientFilter>
+		<categories>
+		<li>Textiles</li>
+		</categories>
+		<exceptedCategories>
+			<li>Leathers</li>
+		</exceptedCategories>
+	</fixedIngredientFilter>
+		
+		<workAmount>3000</workAmount>
+		
+		<products>
+			<Medicine>5</Medicine>
+		</products>
+		
+		<workSpeedStat>DrugProductionSpeed</workSpeedStat>
+		<workSkill>Medicine</workSkill>
+		<recipeUsers>
+		<li>DrugLab</li>
+		</recipeUsers>
+
+		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+
+		<skillRequirements>
+			<Medicine>6</Medicine>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+	
+	</RecipeDef>
+</Defs>
